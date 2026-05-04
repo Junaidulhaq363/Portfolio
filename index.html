@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junaidul Haq | Cloud & DevOps Engineer</title>
-
-  <!-- CSS -->
+  <title>Junaid | DevOps Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Font -->
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- Background -->
-
 <canvas id="bg"></canvas>
-
-<!-- HERO -->
 
 <header class="hero">
   <h1>Junaidul Haq</h1>
@@ -33,25 +19,27 @@
 
   <div class="cta">
     <a href="#contact" class="btn">Hire Me</a>
-    <a href="https://github.com/your-username" target="_blank" class="btn-outline">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://linkedin.com/in/your-profile" target="_blank" class="btn-outline">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+    <a href="https://github.com/your-username" target="_blank" class="btn-outline">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" class="btn-outline">LinkedIn</a>
   </div>
 </header>
 
-<!-- NAVBAR -->
-
 <nav>
+  <a href="#about">Who We Are</a>
   <a href="#services">Services</a>
   <a href="#tech">Technologies</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- SERVICES -->
+<section id="about">
+  <h2>Who We Are</h2>
+  <p class="about-text">
+    We are a cloud-first engineering team specializing in scalable DevOps solutions,
+    cloud infrastructure automation, and modern application development. Our expertise
+    spans across AWS, Azure, Kubernetes, CI/CD pipelines, and observability platforms.
+  </p>
+</section>
 
 <section id="services">
   <h2>Services</h2>
@@ -59,85 +47,54 @@
     <div class="card">Quality Engineering</div>
     <div class="card">Digital Engineering</div>
     <div class="card">Cloud Architecture</div>
-    <div class="card">Generative AI Solutions</div>
+    <div class="card">Generative AI</div>
     <div class="card">Web Development</div>
     <div class="card">Full Stack Development</div>
   </div>
 </section>
 
-<!-- TECH STACK -->
-
 <section id="tech">
-  <h2>Tech Stack</h2>
-  <div class="grid">
-    <div class="card">AWS | Azure | GCP</div>
-    <div class="card">Docker | Kubernetes</div>
-    <div class="card">Terraform | Helm</div>
-    <div class="card">CI/CD: Jenkins | GitHub Actions</div>
-    <div class="card">Monitoring: Grafana | Prometheus</div>
-    <div class="card">Databases: MongoDB | Cassandra | Elasticsearch</div>
-    <div class="card">Messaging: Kafka | RabbitMQ | ActiveMQ</div>
-    <div class="card">Security & Cost Optimization</div>
+  <h2>Technologies</h2>
+  <div class="tech-icons">
+    <img src="https://skillicons.dev/icons?i=aws" />
+    <img src="https://skillicons.dev/icons?i=azure" />
+    <img src="https://skillicons.dev/icons?i=docker" />
+    <img src="https://skillicons.dev/icons?i=kubernetes" />
+    <img src="https://skillicons.dev/icons?i=terraform" />
+    <img src="https://skillicons.dev/icons?i=jenkins" />
+    <img src="https://skillicons.dev/icons?i=grafana" />
+    <img src="https://skillicons.dev/icons?i=github" />
   </div>
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
   <h2>Projects</h2>
   <div class="grid">
-
-```
-<div class="card">
-  <h3>DevOps CI/CD Pipeline</h3>
-  <p>Automated deployment using Jenkins, Docker & Kubernetes</p>
-  <a href="https://github.com/your-username" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-  <h3>Cloud Infrastructure Automation</h3>
-  <p>Provisioned AWS infrastructure using Terraform</p>
-  <a href="https://github.com/your-username" target="_blank">View Project</a>
-</div>
-
-<div class="card">
-  <h3>Kubernetes Monitoring Stack</h3>
-  <p>Grafana + Prometheus monitoring setup</p>
-  <a href="https://github.com/your-username" target="_blank">View Project</a>
-</div>
-```
-
+    <div class="card">
+      <h3>CI/CD Pipeline</h3>
+      <p>Automated deployment using Jenkins, Docker & Kubernetes</p>
+    </div>
+    <div class="card">
+      <h3>Cloud Automation</h3>
+      <p>Terraform based AWS infrastructure setup</p>
+    </div>
   </div>
 </section>
-
-<!-- CONTACT -->
 
 <section id="contact">
-  <h2>Contact Me</h2>
-
+  <h2>Contact</h2>
   <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Describe your project..." required></textarea>
-    <button type="submit">Send Message</button>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Project details" required></textarea>
+    <button type="submit">Send</button>
   </form>
-
-  <div class="contact-links">
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-  </div>
 </section>
 
-<!-- FOOTER -->
-
 <footer>
-  <p>© 2026 Junaidul Haq | Cloud DevOps Engineer</p>
+  <p>© 2026 Junaid DevOps Portfolio</p>
 </footer>
 
-<!-- JS -->
-
 <script src="script.js"></script>
-
 </body>
 </html>
