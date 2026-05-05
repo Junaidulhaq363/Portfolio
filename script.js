@@ -137,11 +137,14 @@ if (contactForm) {
     const phone = document.getElementById('phone').value;
     const fullPhone = code ? `${code} ${phone}` : phone;
 
+    const inputs   = contactForm.querySelectorAll('input[type="text"], input[type="email"]');
+    const textarea = contactForm.querySelector('textarea');
+
     const templateParams = {
-      from_name:  contactForm.querySelector('[name="from_name"]').value,
-      from_email: contactForm.querySelector('[name="from_email"]').value,
+      from_name:  inputs[0] ? inputs[0].value : '',
+      from_email: inputs[1] ? inputs[1].value : '',
       phone:      fullPhone,
-      message:    contactForm.querySelector('[name="message"]').value,
+      message:    textarea  ? textarea.value  : '',
       to_email:   'contact.junaidul@gmail.com'
     };
 
