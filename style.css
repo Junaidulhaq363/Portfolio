@@ -714,3 +714,13 @@ footer p { color: var(--text-muted); font-size: 0.88rem; }
   .stat { padding: 18px 22px; min-width: 100px; }
   .tech-item { padding: 12px 14px; min-width: 70px; }
 }
+
+.custom-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
