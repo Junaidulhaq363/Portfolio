@@ -136,8 +136,7 @@ nav#navbar {
 .hero-bg-image {
   position: absolute;
   inset: 0;
-  background: 
-    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=60&auto=format&fit=crop') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=60&auto=format&fit=crop') center/cover no-repeat;
   z-index: 0;
   opacity: 0.08;
 }
