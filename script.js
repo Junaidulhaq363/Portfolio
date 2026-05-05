@@ -135,8 +135,8 @@ animate();
 // 4. Go to Account → copy your PUBLIC KEY
 // 5. Replace the 3 placeholder values below
 
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz789'
+const EMAILJS_SERVICE_ID  = 'service_ks4w8bs';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_t0fm0a1';  // e.g. 'template_xyz789'
 // Public key is already set in index.html <head>
 
 const contactForm = document.getElementById('contactForm');
