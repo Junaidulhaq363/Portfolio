@@ -1,11 +1,25 @@
 // ===== MOBILE NAV TOGGLE =====
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
-const navClose  = document.getElementById('navClose');
+
+// Dynamically insert close button only on mobile
+let navClose = null;
+function injectCloseBtn() {
+  if (!document.getElementById('navClose')) {
+    navClose = document.createElement('button');
+    navClose.id = 'navClose';
+    navClose.className = 'nav-close';
+    navClose.setAttribute('aria-label', 'Close menu');
+    navClose.textContent = '✕';
+    navClose.addEventListener('click', closeNav);
+    navLinks.insertBefore(navClose, navLinks.firstChild);
+  }
+}
 
 function openNav() {
+  injectCloseBtn();
   navLinks.classList.add('open');
-  document.body.style.overflow = 'hidden'; // prevent background scroll
+  document.body.style.overflow = 'hidden';
 }
 
 function closeNav() {
@@ -14,14 +28,13 @@ function closeNav() {
 }
 
 navToggle.addEventListener('click', openNav);
-if (navClose) navClose.addEventListener('click', closeNav);
 
 // Close when any nav link is tapped
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', closeNav);
 });
 
-// Close when tapping outside the menu (on overlay area)
+// Close when tapping outside the menu
 document.addEventListener('click', (e) => {
   if (navLinks.classList.contains('open') &&
       !navLinks.contains(e.target) &&
