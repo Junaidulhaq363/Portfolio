@@ -115,3 +115,26 @@ canvas {
   left: 0;
   z-index: -1;
 }
+
+/* Fix phone field layout */
+.phone-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Country code dropdown */
+.phone-field select {
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Phone input override */
+.phone-field input {
+  flex: 1;                 /* take remaining space */
+  width: auto !important;  /* override 100% */
+}
